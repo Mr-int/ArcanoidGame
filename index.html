@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkanoid</title>
+    <link rel="stylesheet" href="index.css">
+<body>
+    <main class="main">
+        <div class="game-logo">
+            <h2>Arkanoid</h2>
+        </div>
+
+        <div class="game-start-menu">
+            <button class="game-start-menu__start-btn btn_menu_style" onclick="chooseGameMode()">start</button>
+            <button class="game-start-menu__setting-btn btn_menu_style">settings</button>
+
+            <button class="game-start-menu__single-player-btn btn_menu_style" onclick="startGame()">single player</button>
+            <button class="game-start-menu__pvp-btn btn_menu_style">Player Versus Player</button>
+            <button class="game-start-menu__back-btn btn_menu_style" onclick="goBackToMenu()">Back</button>
+        </div>
+    </main>
+
+    <script src="menuScript.js"></script>
+</body>
+</html> 
