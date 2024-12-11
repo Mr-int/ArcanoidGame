@@ -26,7 +26,7 @@ async function main() {
 
         if (i === 1) {
             const innerBlock = document.createElement('div');
-            innerBlock.className = 'block__style';
+            innerBlock.className = 'block__style red';
             outerBlock.appendChild(innerBlock); // Вставляем видимый блок внутрь
         } else if (i === 0) {
             const innerBlock = document.createElement('div');
@@ -36,7 +36,28 @@ async function main() {
             const innerBlock = document.createElement('div');
             innerBlock.className = 'strong__block';
             outerBlock.appendChild(innerBlock); // Вставляем сильный блок внутрь
+        } else if (i === 3) {
+            const innerBlock = document.createElement('div');
+            innerBlock.className = 'block__style green';
+            outerBlock.appendChild(innerBlock); // Вставляем сильный блок внутрь
+        } else if (i === 4) {
+            const innerBlock = document.createElement('div');
+            innerBlock.className = 'block__style purple';
+            outerBlock.appendChild(innerBlock); // Вставляем сильный блок внутрь
+        } else if (i === 5) {
+            const innerBlock = document.createElement('div');
+            innerBlock.className = 'block__style orange';
+            outerBlock.appendChild(innerBlock); // Вставляем сильный блок внутрь
+        } else if (i === 6) {
+            const innerBlock = document.createElement('div');
+            innerBlock.className = 'block__style blue';
+            outerBlock.appendChild(innerBlock); // Вставляем сильный блок внутрь
+        } else if (i === 7) {
+            const innerBlock = document.createElement('div');
+            innerBlock.className = 'block__style yellow';
+            outerBlock.appendChild(innerBlock); // Вставляем сильный блок внутрь
         }
+
 
         blockField.appendChild(outerBlock); // Добавляем контейнер на поле
     }

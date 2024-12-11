@@ -62,7 +62,7 @@ const TIMER_ELEMENT = document.createElement('div');
 TIMER_ELEMENT.className = 'timer';
 document.body.appendChild(TIMER_ELEMENT);
 
-let timeRemaining = 10; // Время в секундах
+let timeRemaining = 5; // Время в секундах
 function updateTimer() {
     if (timeRemaining <= 0) {
         showEndMenu(); // Показываем окно завершения
@@ -82,7 +82,7 @@ function updateTimer() {
 
 function showEndMenu() {
     const endMenu = document.querySelector(".end-menu");
-    endMenu.style.display = "block"; // Показываем меню
+    endMenu.style.display = "flex"; // Показываем меню
     clearInterval(timerInterval); // Останавливаем таймер
 
     const continueButton = document.createElement("button");

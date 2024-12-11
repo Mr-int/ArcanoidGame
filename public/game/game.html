@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arcanoid</title>
+    <title>Arkanoid</title>
     <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="../game/css/game.css">
 </head>
 
 <body>
@@ -17,16 +17,18 @@
         <div class="end-menu" style="display: none;">
             <h2>Уровень завершен</h2>
             <p>Вы набрали очки: <span class="score-display"></span></p>
+            <p>Разрушено блоков: <span class="block-destroy-count-display"></span></p>
         </div>
         
-
+ 
         <div class="player-paddle"></div>
     </div>
-    <div class="score">Score:</div>
+    <div class="score">score:</div>
     <div class="timer"></div>
 
     <script src="gameScript.js"></script>
     <script src="levelCreating.js"></script>
     <script src="ballScript.js"></script>
+    <script src="powerUps.js"></script>
 </body>
 </html>

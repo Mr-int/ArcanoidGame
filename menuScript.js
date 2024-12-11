@@ -1,7 +1,3 @@
-function startGame() {
-    window.location.href = './public/game/game.html';
-}
-
 let singlePlayer = document.querySelector(".game-start-menu__single-player-btn");
 let pvp = document.querySelector(".game-start-menu__pvp-btn");
 

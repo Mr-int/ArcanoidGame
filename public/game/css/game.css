@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Roboto Mono", monospace;
+}
+
 .main-game-field {
     width: 100%;
     height: 100%;
@@ -20,6 +26,7 @@
     height: 22px;
     background: url('../../image/paddle.png');
     background-size: 100% 100%;
+    transition: width 0.5s; 
 }
 
 .level-block-wrapper {
@@ -64,6 +71,7 @@
     left: 10px;
     font-size: 24px;
     color: white;
+    text-transform: uppercase;
 }
 
 /* Прозрачный внешний блок */
@@ -80,14 +88,40 @@
 
 /* Внутренние блоки */
 .block__style, .empty__block, .strong__block {
-    width: 94%; /* Внутренний блок полностью заполняет внешний */
-    height: 90%;
+    width: 100%; /* Внутренний блок полностью заполняет внешний */
+    height: 100%;
     position: absolute; /* Для точного размещения внутри контейнера */
 }
 
 /* Имеем стандартные стили */
-.block__style {
-    background-color: red; /* Красный блок */
+.red {
+    background: url('../../image/bricks/Colored_Red-64x32.png');
+    background-size: 100% 100%;
+}
+
+.green {
+    background: url('../../image/bricks/Colored_Green-64x32.png');
+    background-size: 100% 100%;
+}
+
+.purple {
+    background: url('../../image/bricks/Colored_Purple-64x32.png');
+    background-size: 100% 100%;
+}
+
+.orange {
+    background: url('../../image/bricks/Colored_Orange-64x32.png');
+    background-size: 100% 100%;
+}
+
+.blue {
+    background: url('../../image/bricks/Colored_Blue-64x32.png');
+    background-size: 100% 100%;
+}
+
+.yellow {
+    background: url('../../image/bricks/Colored_Yellow-64x32.png');
+    background-size: 100% 100%;
 }
 
 .empty__block {
@@ -95,7 +129,8 @@
 }
 
 .strong__block {
-    background-color: grey; /* Серый (нерушимый) блок */
+    background: url('../../image/bricks/Bump\ Small.png');
+    background-size: 100% 100%;
 }
 
 .timer {
@@ -119,6 +154,11 @@
     border-radius: 8px;
     z-index: 1000;
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 440px;
 }
 
 .end-menu h2 {
@@ -143,4 +183,13 @@
 
 .continue-button:hover {
     background-color: #45a049;
+}
+
+.power-up {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    transition: opacity 0.5s;
 }
